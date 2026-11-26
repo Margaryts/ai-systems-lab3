@@ -1,0 +1,29 @@
+section,experiment,model,setting,params_m,metric,value,extra
+2_tokenizers,tokenizer_compare_vocab500,BPE (byte-level),vocab=500,,tokens_on_eval_sample,185001.0,chars/token=1.71
+2_tokenizers,tokenizer_compare_vocab500,BPE (char-level),vocab=500,,tokens_on_eval_sample,157484.0,chars/token=2.01
+2_tokenizers,tokenizer_compare_vocab500,WordPiece,vocab=500,,tokens_on_eval_sample,164021.0,chars/token=1.93
+2_tokenizers,tokenizer_compare_vocab500,Unigram,vocab=500,,tokens_on_eval_sample,167015.0,chars/token=1.89
+3_minigpt,minigpt,minigpt_v1,v1_base_vocab8k_ctx64_L4H4,2.86,best_val_loss,5.356,best_iter=3999
+3_minigpt,minigpt,minigpt_v1,v1_base_vocab8k_ctx64_L4H4,2.86,val_bpc,2.187,best_iter=3999
+3_minigpt,minigpt,minigpt_v2,v2_vocab2k,1.31,best_val_loss,4.222,best_iter=3999
+3_minigpt,minigpt,minigpt_v2,v2_vocab2k,1.31,val_bpc,2.296,best_iter=3999
+3_minigpt,minigpt,minigpt_v3,v3_deeper_L6H4,3.25,best_val_loss,5.319,best_iter=3999
+3_minigpt,minigpt,minigpt_v3,v3_deeper_L6H4,3.25,val_bpc,2.172,best_iter=3999
+3_minigpt,minigpt,minigpt_v4,v4_ctx128_batch16,2.86,best_val_loss,5.464,best_iter=3999
+3_minigpt,minigpt,minigpt_v4,v4_ctx128_batch16,2.86,val_bpc,2.231,best_iter=3999
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,"база: pos_vs_neg, поріг 0.5",278.0,accuracy,0.95,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,"база: pos_vs_neg, поріг 0.5",278.0,f1,0.952,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,lxyuan/distilbert-base-multilingual-cased-sentiments-student,"база: pos_vs_neg, поріг 0.5",135.3,accuracy,0.7,ms_per_text=6.1
+5_model_comparison,sentiment_uk_20,lxyuan/distilbert-base-multilingual-cased-sentiments-student,"база: pos_vs_neg, поріг 0.5",135.3,f1,0.625,ms_per_text=6.1
+5_model_comparison,sentiment_uk_20,tabularisai/multilingual-sentiment-analysis,"база: pos_vs_neg, поріг 0.5",135.3,accuracy,0.9,ms_per_text=5.3
+5_model_comparison,sentiment_uk_20,tabularisai/multilingual-sentiment-analysis,"база: pos_vs_neg, поріг 0.5",135.3,f1,0.889,ms_per_text=5.3
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,правило argmax,278.0,accuracy,0.85,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,правило argmax,278.0,f1,0.842,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,поріг 0.3,278.0,accuracy,0.95,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,поріг 0.3,278.0,f1,0.952,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,поріг 0.7,278.0,accuracy,0.9,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,поріг 0.7,278.0,f1,0.9,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,lowercase + без пунктуації,278.0,accuracy,0.9,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,lowercase + без пунктуації,278.0,f1,0.9,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,префікс «Відгук клієнта: »,278.0,accuracy,0.9,ms_per_text=40.5
+5_model_comparison,sentiment_uk_20,cardiffnlp/twitter-xlm-roberta-base-sentiment,префікс «Відгук клієнта: »,278.0,f1,0.909,ms_per_text=40.5
